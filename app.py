@@ -1,6 +1,7 @@
 from PIL import Image
 import requests
 import streamlit as st
+from streamlit_lottie import st_lottie
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Edikan Webpage", page_icon=":mage:", layout="wide")
@@ -19,7 +20,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css("style/style.css")
+local_css("style/style.css.css")
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/private_files/lf30_wqypnpu5.json")
